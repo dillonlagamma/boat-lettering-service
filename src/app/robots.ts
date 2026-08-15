@@ -7,6 +7,9 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${site.url}/sitemap.xml`,
+    sitemap: [
+      `${site.url}/sitemap.xml`,
+      "https://boatletteringservice.com/sitemap.xml",
+    ],
   };
 }
