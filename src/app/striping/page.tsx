@@ -35,8 +35,8 @@ export default function StripingPage() {
           </ul>
           <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-md">
             <Image
-              src="/portfolio/job-15.jpg"
-              alt="Mission Xpress lettering set in a dark hull stripe"
+              src="/portfolio/pursuit-of-paradise.png"
+              alt="Pursuit of Paradise lettering above a black boot stripe"
               fill
               className="object-cover object-center"
               sizes="40vw"
