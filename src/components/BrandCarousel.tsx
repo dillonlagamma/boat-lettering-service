@@ -8,7 +8,7 @@ function BrandRow({
   brands,
   reverse = false,
 }: {
-  brands: typeof brandLogos;
+  brands: (typeof brandLogos)[number][];
   reverse?: boolean;
 }) {
   const loop = [...brands, ...brands];
