@@ -95,10 +95,5 @@ export function buildInquiryEmail(payload: InquiryPayload) {
     to: site.email,
     subject,
     body,
-    mailto: `mailto:${site.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
   };
-}
-
-export function buildMailto(payload: InquiryPayload) {
-  return buildInquiryEmail(payload).mailto;
 }

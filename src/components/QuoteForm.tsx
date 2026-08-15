@@ -27,9 +27,8 @@ export function QuoteForm({ variant = "light" }: { variant?: "light" | "hero" })
           message: String(form.get("message") ?? ""),
         }),
       });
-      const data = (await response.json()) as { mailto?: string; error?: string };
+      const data = (await response.json()) as { error?: string };
       if (!response.ok) throw new Error(data.error ?? "Request failed");
-      if (data.mailto) window.location.href = data.mailto;
       setStatus("sent");
       event.currentTarget.reset();
     } catch (err) {

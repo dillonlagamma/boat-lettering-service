@@ -53,9 +53,9 @@ export const services = [
     slug: "wraps",
     title: "Vinyl Wraps",
     blurb: "Partial or full hull wraps, transom wraps, and accent panels. A new look without a full paint job.",
-    image: "/images/service-wrap.jpg",
-    alt: "Full-color vinyl wrap on a pink racing hull with custom name and graphics",
-    imagePosition: "center",
+    image: "/portfolio/turtle-iv.png",
+    alt: "TURTLE-IV hull lettering with a mermaid graphic on a white center console",
+    imagePosition: "center 55%",
   },
   {
     slug: "signs",

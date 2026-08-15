@@ -41,9 +41,8 @@ export function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-      const data = (await response.json()) as { mailto?: string; error?: string };
+      const data = (await response.json()) as { error?: string };
       if (!response.ok) throw new Error(data.error ?? "Request failed");
-      if (data.mailto) window.location.href = data.mailto;
       setStatus("sent");
       event.currentTarget.reset();
     } catch (err) {

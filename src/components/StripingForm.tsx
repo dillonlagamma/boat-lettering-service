@@ -169,9 +169,8 @@ export function StripingForm() {
           },
         }),
       });
-      const data = (await response.json()) as { mailto?: string; error?: string };
+      const data = (await response.json()) as { error?: string };
       if (!response.ok) throw new Error(data.error ?? "Request failed");
-      if (data.mailto) window.location.href = data.mailto;
       setStatus("sent");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong.");
